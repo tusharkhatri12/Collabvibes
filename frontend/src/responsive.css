@@ -1,0 +1,56 @@
+/* GLOBAL RESPONSIVE */
+
+@media (max-width:1024px){
+
+    .services-grid,
+    .feature-grid,
+    .steps{
+    grid-template-columns:repeat(2,1fr) !important;
+    }
+    
+    .hero{
+    flex-direction:column !important;
+    text-align:center;
+    }
+    
+    .detail-row,
+    .service-row{
+    grid-template-columns:1fr !important;
+    }
+    
+    }
+    
+    @media (max-width:768px){
+    
+    section{
+    padding:80px 20px !important;
+    }
+    
+    .services-grid,
+    .feature-grid,
+    .steps{
+    grid-template-columns:1fr !important;
+    }
+    
+    .hero-left,
+    .hero-right{
+    width:100% !important;
+    }
+    
+    h1{
+    font-size:32px;
+    }
+    
+    h2{
+    font-size:26px;
+    }
+    
+    }
+    
+    @media (max-width:480px){
+    
+    button{
+    width:100%;
+    }
+    
+    }

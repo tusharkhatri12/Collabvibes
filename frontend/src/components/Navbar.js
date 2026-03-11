@@ -1,37 +1,44 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Navbar.css";
+import { Link } from "react-router-dom";
 
 function Navbar({ variant = "dark" }) {
+
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
 
   return (
     <nav className={`navbar ${variant}`}>
 
-      <div className="logo">
-        Collabvibes
-      </div>
+      {/* Logo */}
+      <Link to="/" className="logo">
+  Collabvibes
+</Link>
+      {/* Navigation Links */}
+      <div className={`nav-links ${menuOpen ? "open" : ""}`}>
 
-      <div className="nav-links">
         <a href="/">Home</a>
         <a href="/services">Services</a>
         <a href="/pricing">Pricing</a>
         <a href="/careers">Careers</a>
         <a href="/contact">Contact</a>
+
+        <button className="login-btn">Login</button>
+        <button className="signup-btn">Sign Up</button>
+
       </div>
-      <div className="nav-actions">
 
-  <button className="login-btn">
-    Login
-  </button>
+      {/* Hamburger Menu */}
+      <div className="hamburger" onClick={toggleMenu}>
 
-  <button className="signup-btn">
-    Sign Up
-  </button>
+        <span></span>
+        <span></span>
+        <span></span>
 
-</div>
-
-      <button className="demo-btn">
-        Book Demo
-      </button>
+      </div>
 
     </nav>
   );

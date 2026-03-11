@@ -1,11 +1,8 @@
 .dashboard{
-    width:450px;
-    background:#0f172a;
-    border-radius:16px;
-    padding:25px;
-    box-shadow:0 30px 60px rgba(0,0,0,0.5);
-   }
-   
+    width:100%;
+    max-width:450px;
+    margin:auto;
+    }
    .dashboard-header{
     font-weight:600;
     margin-bottom:20px;

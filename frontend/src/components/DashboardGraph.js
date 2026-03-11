@@ -1,5 +1,12 @@
 import React from "react";
-import { LineChart, Line, XAxis, YAxis, Tooltip } from "recharts";
+import {
+  LineChart,
+  Line,
+  XAxis,
+  YAxis,
+  Tooltip,
+  ResponsiveContainer
+} from "recharts";
 
 const data = [
  { name: "Jan", hires: 10 },
@@ -13,21 +20,30 @@ function DashboardGraph(){
 
  return(
 
-  <LineChart width={380} height={150} data={data}>
+  <div style={{width:"100%",height:180}}>
 
-   <XAxis dataKey="name" stroke="#94a3b8"/>
-   <YAxis stroke="#94a3b8"/>
+   <ResponsiveContainer>
 
-   <Tooltip/>
+    <LineChart data={data}>
 
-   <Line
-    type="monotone"
-    dataKey="hires"
-    stroke="#3b82f6"
-    strokeWidth={3}
-   />
+      <XAxis dataKey="name" stroke="#94a3b8"/>
 
-  </LineChart>
+      <YAxis stroke="#94a3b8"/>
+
+      <Tooltip/>
+
+      <Line
+       type="monotone"
+       dataKey="hires"
+       stroke="#3b82f6"
+       strokeWidth={3}
+      />
+
+    </LineChart>
+
+   </ResponsiveContainer>
+
+  </div>
 
  );
 

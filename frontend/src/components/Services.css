@@ -16,12 +16,12 @@
     margin-bottom:70px;
    }
    
-   .service-grid{
+   .services-grid{
     display:grid;
-    grid-template-columns:repeat(4,1fr);
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
     gap:30px;
-   }
-   
+    margin-top:60px;
+    }
    .service-card{
     padding:40px;
     border-radius:20px;
@@ -53,3 +53,14 @@
     font-size:15px;
     line-height:1.6;
    }
+   @media (max-width:768px){
+
+    .services{
+    padding:80px 20px;
+    }
+    
+    .services h2{
+    font-size:28px;
+    }
+    
+    }

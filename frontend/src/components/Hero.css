@@ -116,4 +116,32 @@
     100%{
      transform:translateY(80px);
     }
-   }
+   }/* MOBILE HERO */
+
+@media (max-width: 768px){
+
+    .hero{
+      flex-direction: column;
+      text-align: center;
+      padding: 80px 20px;
+    }
+    
+    .hero-left{
+      width: 100%;
+    }
+    
+    .hero-right{
+      width: 100%;
+      margin-top: 30px;
+    }
+    
+    .hero-buttons{
+      flex-direction: column;
+      gap: 15px;
+    }
+    
+    .hero-buttons button{
+      width: 100%;
+    }
+    
+    }

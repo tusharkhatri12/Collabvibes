@@ -1,0 +1,29 @@
+.logos{
+    overflow:hidden;
+    padding:60px;
+    background:#f8fafc;
+   }
+   
+   .logo-track{
+    display:flex;
+    gap:60px;
+    animation:scrollLogos 20s linear infinite;
+    align-items:center;
+   }
+   
+   .logo-track img{
+    height:30px;
+    opacity:0.6;
+   }
+   
+   @keyframes scrollLogos{
+   
+    0%{
+     transform:translateX(0);
+    }
+   
+    100%{
+     transform:translateX(-50%);
+    }
+   
+   }

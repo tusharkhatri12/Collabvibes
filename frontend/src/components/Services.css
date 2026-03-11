@@ -1,0 +1,55 @@
+.services{
+    padding:140px 80px;
+    text-align:center;
+    background:#f8fafc;
+   }
+   
+   .section-title{
+    font-size:42px;
+    font-weight:700;
+    margin-bottom:10px;
+   }
+   
+   .section-subtitle{
+    color:#64748b;
+    font-size:18px;
+    margin-bottom:70px;
+   }
+   
+   .service-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:30px;
+   }
+   
+   .service-card{
+    padding:40px;
+    border-radius:20px;
+    background:white;
+    box-shadow:0 20px 40px rgba(0,0,0,0.08);
+    transition:all 0.3s ease;
+    text-align:left;
+   }
+   
+   .service-card:hover{
+    transform:translateY(-12px);
+    box-shadow:0 30px 60px rgba(0,0,0,0.15);
+    border:1px solid #3b82f6;
+   }
+   
+   .service-icon{
+    font-size:30px;
+    color:#3b82f6;
+    margin-bottom:20px;
+   }
+   
+   .service-card h3{
+    font-size:20px;
+    margin-bottom:10px;
+   }
+   
+   .service-card p{
+    color:#64748b;
+    font-size:15px;
+    line-height:1.6;
+   }

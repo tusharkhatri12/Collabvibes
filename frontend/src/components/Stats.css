@@ -1,0 +1,19 @@
+.stats{
+    display:flex;
+    justify-content:space-around;
+    padding:60px;
+    background:#f8fafc;
+   }
+   
+   .stat{
+    text-align:center;
+   }
+   
+   .stat h2{
+    font-size:36px;
+    color:#3b82f6;
+   }
+   
+   .stat p{
+    font-size:16px;
+   }

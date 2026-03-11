@@ -1,0 +1,64 @@
+.dashboard{
+    width:450px;
+    background:#0f172a;
+    border-radius:16px;
+    padding:25px;
+    box-shadow:0 30px 60px rgba(0,0,0,0.5);
+   }
+   
+   .dashboard-header{
+    font-weight:600;
+    margin-bottom:20px;
+    color:#e2e8f0;
+   }
+   
+   .dashboard-stats{
+    display:flex;
+    justify-content:space-between;
+    margin-bottom:20px;
+   }
+   
+   .stat-box{
+    background:#020617;
+    padding:15px;
+    border-radius:10px;
+    text-align:center;
+    width:30%;
+   }
+   
+   .stat-box h3{
+    color:#3b82f6;
+   }
+   
+   .dashboard-pipeline h4{
+    margin-bottom:10px;
+   }
+   
+   .dashboard-pipeline ul{
+    list-style:none;
+    padding:0;
+   }
+   
+   .dashboard-pipeline li{
+    background:#020617;
+    margin-bottom:8px;
+    padding:8px;
+    border-radius:6px;
+   }
+   .dashboard-graph{
+    margin:20px 0;
+    background:#020617;
+    padding:10px;
+    border-radius:10px;
+   }
+   .activity{
+    margin-top:15px;
+   }
+   
+   .activity li{
+    background:#020617;
+    margin:6px 0;
+    padding:8px;
+    border-radius:6px;
+    font-size:13px;
+   }

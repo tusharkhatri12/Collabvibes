@@ -1,0 +1,69 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+/* DARK MODE */
+.careers{
+  padding:120px 80px;
+  text-align:center;
+ }
+ 
+ .job-list{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:30px;
+  margin-top:60px;
+ }
+ 
+ .job-card{
+  padding:30px;
+  background:white;
+  border-radius:16px;
+  box-shadow:0 20px 40px rgba(0,0,0,0.08);
+ }
+ 
+ .job-card button{
+  margin-top:10px;
+  padding:10px 18px;
+  border:none;
+  background:#3b82f6;
+  color:white;
+  border-radius:8px;
+ }
+ .contact{
+  padding:120px 80px;
+  text-align:center;
+ }
+ 
+ .contact-form{
+  display:flex;
+  flex-direction:column;
+  width:400px;
+  margin:auto;
+  gap:15px;
+  margin-top:40px;
+ }
+ 
+ .contact-form input,
+ .contact-form textarea{
+  padding:12px;
+  border-radius:8px;
+  border:1px solid #ddd;
+ }
+ 
+ .contact-form button{
+  padding:12px;
+  border:none;
+  background:#3b82f6;
+  color:white;
+  border-radius:8px;
+ }

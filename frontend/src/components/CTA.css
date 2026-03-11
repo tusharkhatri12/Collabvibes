@@ -1,0 +1,16 @@
+.cta{
+    text-align:center;
+    padding:100px;
+    background:#0f172a;
+    color:white;
+   }
+   
+   .cta button{
+    margin-top:20px;
+    padding:15px 40px;
+    border:none;
+    background:#3b82f6;
+    color:white;
+    border-radius:8px;
+    cursor:pointer;
+   }

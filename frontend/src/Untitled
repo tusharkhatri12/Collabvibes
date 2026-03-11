@@ -1,0 +1,27 @@
+.careers{
+ padding:120px 80px;
+ text-align:center;
+}
+
+.job-list{
+ display:grid;
+ grid-template-columns:repeat(3,1fr);
+ gap:30px;
+ margin-top:60px;
+}
+
+.job-card{
+ padding:30px;
+ background:white;
+ border-radius:16px;
+ box-shadow:0 20px 40px rgba(0,0,0,0.08);
+}
+
+.job-card button{
+ margin-top:10px;
+ padding:10px 18px;
+ border:none;
+ background:#3b82f6;
+ color:white;
+ border-radius:8px;
+}

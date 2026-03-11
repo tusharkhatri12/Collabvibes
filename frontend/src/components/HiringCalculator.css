@@ -1,0 +1,36 @@
+.calculator{
+    padding:120px 80px;
+    text-align:center;
+    background:#0f172a;
+    color:white;
+   }
+   
+   .calculator h2{
+    font-size:36px;
+    margin-bottom:30px;
+   }
+   
+   .calculator label{
+    display:block;
+    margin-bottom:10px;
+    font-size:16px;
+    opacity:0.8;
+   }
+   
+   .calculator input[type="range"]{
+    width:300px;
+    margin:20px auto;
+    display:block;
+   }
+   
+   .calculator h3{
+    font-size:28px;
+    margin-top:20px;
+   }
+   
+   .cost{
+    font-size:36px;
+    font-weight:700;
+    margin-top:10px;
+    color:#3b82f6;
+   }

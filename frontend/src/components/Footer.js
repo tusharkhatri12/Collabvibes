@@ -109,9 +109,9 @@ Subscribe
 
 <div className="footer-bottom-links">
 
-<a href="#">Privacy</a>
-<a href="#">Terms</a>
-<a href="#">Security</a>
+<a href="/privacy">Privacy</a>
+<a href="/privy">Terms</a>
+<a href="/son">Security</a>
 
 </div>
 

@@ -65,10 +65,10 @@ payroll and compliance tools designed for modern companies.
 
 <h4>Company</h4>
 
-<a href="#">About</a>
-<a href="#">Blog</a>
-<a href="#">Partners</a>
-<a href="#">Careers</a>
+<Link to="/about">About</Link>
+<Link to="/blog">Blog</Link>
+<Link to="/partners">Partners</Link>
+<Link to="/careers">Careers</Link>
 
 </div>
 

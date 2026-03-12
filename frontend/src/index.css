@@ -75,7 +75,7 @@ code {
 
 @media (max-width: 1024px){
 
-<<<<<<< HEAD
+ HEAD
   .services-grid,
   .feature-grid,
   .steps{
@@ -141,78 +141,5 @@ code {
   }
 
 }
-=======
-  /* grids become 2 columns */
+
   
-  .services-grid,
-  .feature-grid,
-  .pricing-grid,
-  .steps{
-  grid-template-columns: repeat(2,1fr) !important;
-  }
-  
-  .hero{
-  flex-direction: column !important;
-  text-align:center;
-  }
-  
-  .hero-left,
-  .hero-right{
-  width:100% !important;
-  }
-  
-  .detail-row,
-  .service-row{
-  grid-template-columns:1fr !important;
-  }
-  
-  }
-  
-  @media (max-width:768px){
-  
-  section{
-  padding:80px 20px !important;
-  }
-  
-  /* grids become 1 column */
-  
-  .services-grid,
-  .feature-grid,
-  .pricing-grid,
-  .steps{
-  grid-template-columns:1fr !important;
-  }
-  
-  /* buttons full width */
-  
-  button{
-  width:100%;
-  }
-  
-  /* headings smaller */
-  
-  h1{
-  font-size:32px !important;
-  }
-  
-  h2{
-  font-size:26px !important;
-  }
-  
-  }
-  
-  @media (max-width:480px){
-  
-  p{
-  font-size:14px;
-  }
-  
-  }body{
-    overflow-x:hidden;
-    }
-    
-    img{
-    max-width:100%;
-    height:auto;
-    }
->>>>>>> 2236f7e (new changes responsive now)

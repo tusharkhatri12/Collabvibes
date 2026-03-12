@@ -8,34 +8,27 @@ const [menuOpen,setMenuOpen] = useState(false);
 const [scrolled,setScrolled] = useState(false);
 
 const location = useLocation();
-
 const isHome = location.pathname === "/";
 
 useEffect(()=>{
 
-const handleScroll = () =>{
-
-if(window.scrollY > 50){
-setScrolled(true);
-}else{
-setScrolled(false);
-}
-
+const handleScroll = () => {
+setScrolled(window.scrollY > 50);
 };
 
 window.addEventListener("scroll",handleScroll);
 
-return () => window.removeEventListener("scroll",handleScroll);
+return ()=>window.removeEventListener("scroll",handleScroll);
 
 },[]);
 
+useEffect(()=>{
+setMenuOpen(false);
+},[location.pathname]);
+
 return(
 
-<nav
-className={`navbar 
-${isHome && !scrolled ? "navbar-transparent" : "navbar-solid"}
-`}
->
+<nav className={`navbar ${isHome && !scrolled ? "navbar-transparent" : "navbar-solid"}`}>
 
 <div className="nav-container">
 
@@ -50,6 +43,18 @@ Collabvibes
 <Link to="/pricing">Pricing</Link>
 <Link to="/careers">Careers</Link>
 <Link to="/contact">Contact</Link>
+
+<div className="mobile-auth">
+
+<Link to="/login" className="login-btn">
+Login
+</Link>
+
+<Link to="/signup" className="signup-btn">
+Sign Up
+</Link>
+
+</div>
 
 </div>
 
@@ -66,7 +71,7 @@ Sign Up
 </div>
 
 <div
-className="hamburger"
+className={`hamburger ${menuOpen ? "active" : ""}`}
 onClick={()=>setMenuOpen(!menuOpen)}
 >
 

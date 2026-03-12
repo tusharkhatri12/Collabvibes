@@ -1,4 +1,4 @@
-/* NAVBAR BASE */
+/* NAVBAR */
 
 .navbar{
   position:fixed;
@@ -6,31 +6,30 @@
   left:0;
   width:100%;
   z-index:1000;
-  transition:all 0.3s ease;
+  transition:.3s;
   }
   
   /* CONTAINER */
   
   .nav-container{
+  width:100%;
   max-width:1200px;
   margin:auto;
   display:flex;
   align-items:center;
   justify-content:space-between;
-  padding:18px 20px;
+  padding:16px 20px;
+  box-sizing:border-box;
   }
   
   /* LOGO */
   
   .logo{
-  font-size:20px;
+  font-size:22px;
   font-weight:700;
   text-decoration:none;
-  transition:0.3s;
-  cursor:pointer;
+  transition:.3s;
   }
-  
-  /* GRADIENT LOGO HOVER */
   
   .logo:hover{
   background:linear-gradient(90deg,#22d3ee,#6366f1,#a855f7);
@@ -38,7 +37,7 @@
   -webkit-text-fill-color:transparent;
   }
   
-  /* LINKS */
+  /* NAV LINKS */
   
   .nav-links{
   display:flex;
@@ -46,15 +45,13 @@
   align-items:center;
   }
   
-  /* NAV LINKS */
-  
   .nav-links a{
   position:relative;
   text-decoration:none;
-  font-weight:500;
   font-size:15px;
-  transition:0.25s;
+  font-weight:500;
   padding:4px 0;
+  transition:.3s;
   }
   
   /* GRADIENT UNDERLINE */
@@ -66,14 +63,9 @@
   bottom:-4px;
   width:0%;
   height:2px;
-  
   background:linear-gradient(90deg,#22d3ee,#6366f1,#a855f7);
-  
-  transition:width .35s ease;
-  box-shadow:0 0 10px rgba(99,102,241,0.8);
+  transition:.3s;
   }
-  
-  /* HOVER */
   
   .nav-links a:hover::after{
   width:100%;
@@ -83,7 +75,6 @@
   
   .nav-buttons{
   display:flex;
-  align-items:center;
   gap:12px;
   }
   
@@ -93,7 +84,6 @@
   border:1px solid rgba(255,255,255,0.4);
   text-decoration:none;
   font-size:14px;
-  transition:0.2s;
   }
   
   .signup-btn{
@@ -122,7 +112,6 @@
   
   .navbar-transparent .login-btn{
   color:white;
-  border:1px solid rgba(255,255,255,0.4);
   }
   
   .navbar-transparent .hamburger span{
@@ -133,7 +122,7 @@
   
   .navbar-solid{
   background:#020617;
-  box-shadow:0 4px 20px rgba(0,0,0,0.4);
+  box-shadow:0 4px 20px rgba(0,0,0,0.5);
   }
   
   .navbar-solid .logo{
@@ -162,19 +151,40 @@
   }
   
   .hamburger span{
-  width:25px;
+  width:24px;
   height:3px;
   margin:4px 0;
-  transition:0.2s;
+  transition:.3s;
+  }
+  
+  /* MOBILE AUTH */
+  
+  .mobile-auth{
+  display:none;
+  flex-direction:column;
+  gap:12px;
+  margin-top:10px;
+  }
+  
+  .mobile-auth a{
+  text-align:center;
   }
   
   /* MOBILE */
   
   @media (max-width:768px){
   
+  .nav-buttons{
+  display:none;
+  }
+  
+  .hamburger{
+  display:flex;
+  }
+  
   .nav-links{
   position:absolute;
-  top:70px;
+  top:64px;
   left:0;
   width:100%;
   background:#020617;
@@ -189,16 +199,12 @@
   display:flex;
   }
   
+  .mobile-auth{
+  display:flex;
+  }
+  
   .nav-links a{
   color:#e2e8f0;
-  }
-  
-  .nav-buttons{
-  display:none;
-  }
-  
-  .hamburger{
-  display:flex;
   }
   
   }

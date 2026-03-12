@@ -3,34 +3,60 @@ import "./HiringCalculator.css";
 
 function HiringCalculator(){
 
- const [developers,setDevelopers] = useState(1);
+const [developers,setDevelopers] = useState(1);
 
- const costPerDev = 4000;
- const totalCost = developers * costPerDev;
+const costPerDev = 90000; // ₹ per developer
 
- return(
+const totalCost = developers * costPerDev;
 
-  <section className="calculator">
+return(
 
-   <h2>Estimate Your Hiring Cost</h2>
+<section className="calculator-section">
 
-   <label>Number of Developers</label>
+<div className="calculator-card">
 
-   <input
-    type="range"
-    min="1"
-    max="20"
-    value={developers}
-    onChange={(e)=>setDevelopers(e.target.value)}
-   />
+<h2>
+Estimate Your <span className="gradient-text">Hiring Cost</span>
+</h2>
 
-   <h3>{developers} Developers</h3>
+<p className="calc-subtext">
+Quickly calculate the monthly cost of building your team across India.
+</p>
 
-   <p className="cost">${totalCost}/month</p>
+<div className="slider-wrapper">
 
-  </section>
+<label>Number of Developers</label>
 
- );
+<input
+type="range"
+min="1"
+max="20"
+value={developers}
+onChange={(e)=>setDevelopers(e.target.value)}
+className="slider"
+/>
+
+</div>
+
+<div className="calc-result">
+
+<h3>{developers} Developers</h3>
+
+<h1 className="gradient-text">
+₹ {totalCost.toLocaleString()} / month
+</h1>
+
+<p className="calc-note">
+Includes hiring support, payroll automation and compliance management.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+);
 
 }
 

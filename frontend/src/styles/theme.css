@@ -1,34 +1,69 @@
-/* GLOBAL DARK THEME */
+/* BACKGROUND BLOBS */
 
-body{
-    background: radial-gradient(circle at top,#0f172a,#020617);
-    color:white;
-    font-family: Inter, sans-serif;
-    overflow-x:hidden;
-    }
-    
-    /* animated particles */
-    
-    body::before{
-    content:"";
+.background-blobs{
     position:fixed;
     top:0;
     left:0;
-    width:200%;
-    height:200%;
-    background-image:radial-gradient(#ffffff22 1px, transparent 1px);
-    background-size:40px 40px;
-    animation:particleMove 80s linear infinite;
-    opacity:0.5;
+    width:100%;
+    height:100%;
+    z-index:-1;
+    overflow:hidden;
     pointer-events:none;
     }
     
-    @keyframes particleMove{
-    0%{transform:translateY(0)}
-    100%{transform:translateY(-1000px)}
+    /* BASE BLOB */
+    
+    .blob{
+    position:absolute;
+    width:500px;
+    height:500px;
+    border-radius:50%;
+    filter:blur(120px);
+    opacity:0.35;
+    animation:blobMove 25s infinite alternate ease-in-out;
     }
     
-    /* section layout */
+    /* COLORS */
+    
+    .blob1{
+    background:#6366f1;
+    top:-120px;
+    left:-150px;
+    }
+    
+    .blob2{
+    background:#22d3ee;
+    top:45%;
+    right:-150px;
+    animation-duration:30s;
+    }
+    
+    .blob3{
+    background:#a855f7;
+    bottom:-150px;
+    left:35%;
+    animation-duration:35s;
+    }
+    
+    /* ANIMATION */
+    
+    @keyframes blobMove{
+    
+    0%{
+    transform:translate(0,0) scale(1);
+    }
+    
+    50%{
+    transform:translate(80px,-60px) scale(1.2);
+    }
+    
+    100%{
+    transform:translate(-80px,40px) scale(1);
+    }
+    
+    }
+    
+    /* SECTION LAYOUT */
     
     .section{
     max-width:1200px;
@@ -38,7 +73,7 @@ body{
     z-index:2;
     }
     
-    /* glass cards */
+    /* GLASS CARDS */
     
     .glass-card{
     background:rgba(255,255,255,0.04);
@@ -55,7 +90,7 @@ body{
     border-color:#6366f1;
     }
     
-    /* gradient text */
+    /* GRADIENT TEXT */
     
     .gradient-text{
     background:linear-gradient(90deg,#22d3ee,#3b82f6,#a855f7);
@@ -71,7 +106,7 @@ body{
     100%{background-position:0% 50%}
     }
     
-    /* grid */
+    /* GRID */
     
     .grid{
     display:grid;

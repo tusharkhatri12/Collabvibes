@@ -15,4 +15,9 @@
   font-family:Inter,system-ui,Arial,sans-serif;
   -webkit-font-smoothing:antialiased;
   -moz-osx-font-smoothing:grayscale;
+  
+  background: radial-gradient(circle at top,#0f172a,#020617);
+  color:white;
+  
+  overflow-x:hidden;
   }

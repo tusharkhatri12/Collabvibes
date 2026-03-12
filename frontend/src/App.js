@@ -15,8 +15,16 @@ import Signup from "./pages/Signup";
 
 function App() {
   return (
+    
     <BrowserRouter>
 <Navbar/>
+<div className="background-blobs">
+
+<div className="blob blob1"></div>
+<div className="blob blob2"></div>
+<div className="blob blob3"></div>
+
+</div>
       <ScrollProgress />
 
       <AnimatePresence mode="wait">
@@ -41,6 +49,7 @@ function App() {
       </AnimatePresence>
 
     </BrowserRouter>
+    
   );
 }
 

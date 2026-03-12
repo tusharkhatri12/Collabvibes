@@ -1,29 +1,36 @@
 .logos{
-    overflow:hidden;
-    padding:60px;
-    background:#f8fafc;
-   }
-   
-   .logo-track{
+    padding:80px 20px;
+    text-align:center;
+    background:transparent;
+    }
+    
+    .logos h3{
+    color:#94a3b8;
+    margin-bottom:40px;
+    font-weight:500;
+    }
+    
+    /* LOGO ROW */
+    
+    .logos-row{
     display:flex;
-    gap:60px;
-    animation:scrollLogos 20s linear infinite;
+    justify-content:center;
     align-items:center;
-   }
-   
-   .logo-track img{
-    height:30px;
+    gap:60px;
+    flex-wrap:wrap;
+    }
+    
+    /* LOGOS */
+    
+    .logos-row img{
+    height:40px;
     opacity:0.6;
-   }
-   
-   @keyframes scrollLogos{
-   
-    0%{
-     transform:translateX(0);
+    filter:grayscale(100%);
+    transition:0.3s;
     }
-   
-    100%{
-     transform:translateX(-50%);
+    
+    .logos-row img:hover{
+    opacity:1;
+    filter:grayscale(0);
+    transform:scale(1.05);
     }
-   
-   }

@@ -1,31 +1,31 @@
-import React from "react";
 import "./Logos.css";
 
 function Logos(){
 
- return(
+return(
 
-  <section className="logos">
+<section className="logos">
 
-   <div className="logo-track">
+<h3>Trusted by modern teams</h3>
 
-    <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt=""/>
-    <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg" alt=""/>
-    <img src="https://upload.wikimedia.org/wikipedia/commons/7/7a/Stripe_Logo%2C_revised_2016.svg" alt=""/>
-    <img src="https://upload.wikimedia.org/wikipedia/commons/b/b9/Slack_Technologies_Logo.svg" alt=""/>
-    <img src="https://upload.wikimedia.org/wikipedia/commons/9/9d/Shopify_logo.svg" alt=""/>
+<div className="logos-row">
 
-    {/* repeat for infinite loop */}
+<img src="https://cdn.simpleicons.org/google/ffffff" alt="Google"/>
 
-    <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt=""/>
-    <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg" alt=""/>
-    <img src="https://upload.wikimedia.org/wikipedia/commons/7/7a/Stripe_Logo%2C_revised_2016.svg" alt=""/>
+{/* <img src="https://cdn.simpleicons.org/amazon/ffffff" alt="Amazon"/> */}
 
-   </div>
+<img src="https://cdn.simpleicons.org/meta/ffffff" alt="Meta"/>
 
-  </section>
+<img src="https://cdn.simpleicons.org/airbnb/ffffff" alt="Airbnb"/>
 
- );
+<img src="https://cdn.simpleicons.org/stripe/ffffff" alt="Stripe"/>
+
+</div>
+
+</section>
+
+);
+
 }
 
 export default Logos;

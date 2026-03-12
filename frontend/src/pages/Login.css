@@ -1,0 +1,116 @@
+/* PAGE BACKGROUND */
+
+.auth{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:120px 20px;
+    }
+    
+    /* FORM CARD */
+    
+    .auth-card{
+    width:100%;
+    max-width:420px;
+    
+    background:rgba(255,255,255,0.04);
+    border:1px solid rgba(255,255,255,0.08);
+    backdrop-filter:blur(14px);
+    
+    border-radius:20px;
+    padding:40px;
+    
+    text-align:center;
+    transition:.3s;
+    }
+    
+    /* HEADER */
+    
+    .auth-card h2{
+    font-size:32px;
+    margin-bottom:10px;
+    }
+    
+    .auth-sub{
+    color:#94a3b8;
+    margin-bottom:30px;
+    }
+    
+    /* FORM */
+    
+    .auth-form{
+    display:flex;
+    flex-direction:column;
+    gap:16px;
+    }
+    
+    .auth-form input{
+    padding:14px;
+    border-radius:10px;
+    border:1px solid rgba(255,255,255,0.08);
+    background:rgba(255,255,255,0.05);
+    color:white;
+    outline:none;
+    }
+    
+    .auth-form input::placeholder{
+    color:#94a3b8;
+    }
+    
+    /* BUTTON */
+    
+    .auth-btn{
+    margin-top:10px;
+    padding:14px;
+    
+    border:none;
+    border-radius:10px;
+    
+    background:linear-gradient(90deg,#6366f1,#a855f7);
+    
+    color:white;
+    font-weight:600;
+    cursor:pointer;
+    
+    transition:.3s;
+    }
+    
+    .auth-btn:hover{
+    transform:translateY(-2px);
+    box-shadow:0 10px 40px rgba(99,102,241,0.5);
+    }
+    
+    /* SWITCH LINK */
+    
+    .auth-switch{
+    margin-top:20px;
+    color:#94a3b8;
+    }
+    
+    .auth-switch a{
+    color:#6366f1;
+    text-decoration:none;
+    }
+    
+    /* GRADIENT WORD */
+    
+    .gradient-word{
+    background:linear-gradient(270deg,#22d3ee,#6366f1,#a855f7);
+    background-size:300% 300%;
+    
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+    
+    animation:gradientMove 6s ease infinite;
+    }
+    
+    @keyframes gradientMove{
+    
+    0%{background-position:0% 50%}
+    
+    50%{background-position:100% 50%}
+    
+    100%{background-position:0% 50%}
+    
+    }

@@ -1,46 +1,50 @@
-import React from "react";
-import { motion } from "framer-motion";
 import "./Hero.css";
-import ProductDemo from "./ProductDemo";
-function Hero() {
-  return (
-    <section className="hero">
 
-      <motion.div
-        className="hero-left"
-        initial={{ opacity: 0, y: 40 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6 }}
-      >
-        <h1>
-          Build Your Global Team
-          <span className="gradient-text"> Without The Headache</span>
-        </h1>
+function Hero(){
 
-        <p>
-          Hire offshore talent, manage payroll, and scale your operations
-          globally with IcebergOS.
-        </p>
+return(
 
-        <div className="hero-buttons">
-          <button className="primary-btn">Hire Talent</button>
-          <button className="secondary-btn">Book Demo</button>
-        </div>
-      </motion.div>
+<section className="hero">
 
-      <motion.div
-        className="hero-right"
-        initial={{ opacity: 0, scale: 0.9 }}
-        animate={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 0.6 }}
-      >
-       <div className="hero-right">
- <ProductDemo/>
+<div className="hero-content">
+
+<div className="hero-badge">
+Operations Platform for India
 </div>
-      </motion.div>
 
-    </section>
-  );
+<h1>
+
+STOP <span className="gradient-text">STRUGGLING</span>
+
+<br/>
+
+START <span className="gradient-text">GROWING</span>
+
+</h1>
+
+<p>
+Manage hiring, payroll and compliance for Indian teams
+with a single modern platform.
+</p>
+
+<div className="hero-buttons">
+
+<button className="primary-btn">
+Start Hiring Today
+</button>
+
+<button className="secondary-btn">
+See How It Works
+</button>
+
+</div>
+
+</div>
+
+</section>
+
+);
+
 }
 
 export default Hero;

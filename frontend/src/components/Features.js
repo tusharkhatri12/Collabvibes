@@ -1,56 +1,89 @@
-import React from "react";
-import { FaRobot, FaGlobe, FaChartLine, FaShieldAlt } from "react-icons/fa";
 import "./Features.css";
-import { motion } from "framer-motion";
 
-function Features() {
-  return (
-    <motion.section
-     className="features">
+function Features(){
 
-      <h2 className="section-title">
-        Powerful Platform Features
-      </h2>
+return(
 
-      <div className="feature-grid">
+<section className="features">
 
-        <div className="feature-card">
-          <FaRobot className="feature-icon"/>
-          <h3>AI Talent Matching</h3>
-          <p>
-            Our AI recommends the best candidates based on skills, salary,
-            and location.
-          </p>
-        </div>
+<div className="features-header">
 
-        <div className="feature-card">
-          <FaGlobe className="feature-icon"/>
-          <h3>Global Hiring</h3>
-          <p>
-            Hire employees and contractors from more than 50 countries.
-          </p>
-        </div>
+<h2>
+Everything You Need to <span className="gradient-word">Scale</span> Your Team in India
+</h2>
 
-        <div className="feature-card">
-          <FaChartLine className="feature-icon"/>
-          <h3>Hiring Analytics</h3>
-          <p>
-            Track hiring pipeline, conversion rates, and team growth.
-          </p>
-        </div>
+<p>
+Our platform combines hiring, payroll automation and compliance tools
+to help Indian startups and growing companies build operational teams
+without dealing with complicated processes or multiple vendors.
+</p>
 
-        <div className="feature-card">
-          <FaShieldAlt className="feature-icon"/>
-          <h3>Compliance Tools</h3>
-          <p>
-            Stay compliant with international employment laws automatically.
-          </p>
-        </div>
+</div>
 
-      </div>
+<div className="features-grid">
 
-    </motion.section>
-  );
+
+<div className="feature-card">
+
+<h3>Hire Across India</h3>
+
+<p>
+Access a curated network of professionals across major Indian cities.
+Whether you need operations executives, developers, support agents or
+administrative staff, our platform simplifies recruitment so businesses
+can scale teams faster without spending months in hiring cycles.
+</p>
+
+</div>
+
+
+<div className="feature-card">
+
+<h3>Automated Payroll</h3>
+
+<p>
+Run payroll seamlessly with built-in salary processing, deductions,
+and compliance management. Our system helps companies handle employee
+payments, tax deductions and payroll documentation while ensuring
+accuracy and transparency.
+</p>
+
+</div>
+
+
+<div className="feature-card">
+
+<h3>Operations Dashboard</h3>
+
+<p>
+Track hiring progress, monitor employee performance and gain insights
+into operational efficiency through a unified dashboard. Managers can
+view team metrics, payroll status and productivity trends in one place.
+</p>
+
+</div>
+
+
+<div className="feature-card">
+
+<h3>Compliance & Documentation</h3>
+
+<p>
+Stay compliant with Indian labour laws and employment regulations.
+Generate contracts, maintain employee documentation and ensure your
+organization meets statutory compliance requirements without complex
+manual processes.
+</p>
+
+</div>
+
+
+</div>
+
+</section>
+
+);
+
 }
 
 export default Features;

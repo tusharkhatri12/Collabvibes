@@ -1,145 +1,18 @@
-html, body {
-  width: 100%;
-  overflow-x: hidden;
-}
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+/* CSS RESET */
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
-/* DARK MODE */
-.careers{
-  padding:120px 80px;
-  text-align:center;
- }
- 
- .job-list{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:30px;
-  margin-top:60px;
- }
- 
- .job-card{
-  padding:30px;
-  background:white;
-  border-radius:16px;
-  box-shadow:0 20px 40px rgba(0,0,0,0.08);
- }
- 
- .job-card button{
-  margin-top:10px;
-  padding:10px 18px;
-  border:none;
-  background:#3b82f6;
-  color:white;
-  border-radius:8px;
- }
- .contact{
-  padding:120px 80px;
-  text-align:center;
- }
- 
- .contact-form{
-  display:flex;
-  flex-direction:column;
-  width:400px;
-  margin:auto;
-  gap:15px;
-  margin-top:40px;
- }
- 
- .contact-form input,
- .contact-form textarea{
-  padding:12px;
-  border-radius:8px;
-  border:1px solid #ddd;
- }
- 
- .contact-form button{
-  padding:12px;
-  border:none;
-  background:#3b82f6;
-  color:white;
-  border-radius:8px;
- }
- /* GLOBAL RESPONSIVE FIX */
-
-@media (max-width: 1024px){
-
- HEAD
-  .services-grid,
-  .feature-grid,
-  .steps{
-    grid-template-columns: repeat(2,1fr) !important;
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
   }
-
-  .detail-row,
-  .service-row,
-  .hero{
-    grid-template-columns: 1fr !important;
-    flex-direction: column !important;
-  }
-
-}
-
-
-@media (max-width: 768px){
-
-  section{
-    padding: 80px 20px !important;
-  }
-
-  h1{
-    font-size: 32px !important;
-  }
-
-  h2{
-    font-size: 26px !important;
-  }
-
-  p{
-    font-size: 15px !important;
-  }
-
-  .services-grid,
-  .feature-grid,
-  .steps{
-    grid-template-columns: 1fr !important;
-  }
-
-  .service-text,
-  .detail-text,
-  .hero-left,
-  .hero-right{
-    width: 100% !important;
-  }
-
-}
-
-
-@media (max-width: 480px){
-
-  .navbar{
-    padding: 15px 20px !important;
-  }
-
-  .logo{
-    font-size: 18px !important;
-  }
-
-  button{
-    padding: 10px 16px !important;
-  }
-
-}
-
   
+  html,body,#root{
+  height:100%;
+  width:100%;
+  }
+  
+  body{
+  font-family:Inter,system-ui,Arial,sans-serif;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  }

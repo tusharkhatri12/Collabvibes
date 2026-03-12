@@ -1,47 +1,87 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import { Link, useLocation } from "react-router-dom";
 import "./Navbar.css";
-import { Link } from "react-router-dom";
 
-function Navbar({ variant = "dark" }) {
+function Navbar(){
 
-  const [menuOpen, setMenuOpen] = useState(false);
+const [menuOpen,setMenuOpen] = useState(false);
+const [scrolled,setScrolled] = useState(false);
 
-  const toggleMenu = () => {
-    setMenuOpen(!menuOpen);
-  };
+const location = useLocation();
 
-  return (
-    <nav className={`navbar ${variant}`}>
+const isHome = location.pathname === "/";
 
-      {/* Logo */}
-      <Link to="/" className="logo">
-  Collabvibes
+useEffect(()=>{
+
+const handleScroll = () =>{
+
+if(window.scrollY > 50){
+setScrolled(true);
+}else{
+setScrolled(false);
+}
+
+};
+
+window.addEventListener("scroll",handleScroll);
+
+return () => window.removeEventListener("scroll",handleScroll);
+
+},[]);
+
+return(
+
+<nav
+className={`navbar 
+${isHome && !scrolled ? "navbar-transparent" : "navbar-solid"}
+`}
+>
+
+<div className="nav-container">
+
+<Link to="/" className="logo">
+Collabvibes
 </Link>
-      {/* Navigation Links */}
-      <div className={`nav-links ${menuOpen ? "open" : ""}`}>
 
-        <a href="/">Home</a>
-        <a href="/services">Services</a>
-        <a href="/pricing">Pricing</a>
-        <a href="/careers">Careers</a>
-        <a href="/contact">Contact</a>
+<div className={`nav-links ${menuOpen ? "open" : ""}`}>
 
-        <button className="login-btn">Login</button>
-        <button className="signup-btn">Sign Up</button>
+<Link to="/">Home</Link>
+<Link to="/services">Services</Link>
+<Link to="/pricing">Pricing</Link>
+<Link to="/careers">Careers</Link>
+<Link to="/contact">Contact</Link>
 
-      </div>
+</div>
 
-      {/* Hamburger Menu */}
-      <div className="hamburger" onClick={toggleMenu}>
+<div className="nav-buttons">
 
-        <span></span>
-        <span></span>
-        <span></span>
+<Link to="/login" className="login-btn">
+Login
+</Link>
 
-      </div>
+<Link to="/signup" className="signup-btn">
+Sign Up
+</Link>
 
-    </nav>
-  );
+</div>
+
+<div
+className="hamburger"
+onClick={()=>setMenuOpen(!menuOpen)}
+>
+
+<span></span>
+<span></span>
+<span></span>
+
+</div>
+
+</div>
+
+</nav>
+
+);
+
 }
 
 export default Navbar;

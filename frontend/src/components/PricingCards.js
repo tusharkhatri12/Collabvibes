@@ -1,70 +1,90 @@
-import React from "react";
 import "./PricingCards.css";
 
-function PricingCards(){
+function Pricing() {
 
- return(
+return(
 
-  <section className="pricing">
+<section className="pricing">
 
-   <h2>Simple Pricing</h2>
+<h2>
+Simple <span className="gradient-word">Pricing</span>
+</h2>
 
-   <div className="pricing-grid">
+<p className="pricing-sub">
+Transparent pricing built for Indian startups and growing businesses.
+</p>
 
-    <div className="price-card">
+<div className="pricing-grid">
 
-     <h3>Starter</h3>
 
-     <p className="price">$99/mo</p>
+<div className="pricing-card">
 
-     <ul>
-      <li>Global Hiring</li>
-      <li>Email Support</li>
-      <li>Basic Payroll</li>
-     </ul>
+<h3>Starter</h3>
 
-     <button>Get Started</button>
+<div className="price">₹2,999<span>/mo</span></div>
 
-    </div>
+<ul>
+<li>Hire up to 5 employees</li>
+<li>Basic payroll automation</li>
+<li>Email support</li>
+<li>Operations dashboard</li>
+</ul>
 
-    <div className="price-card popular">
+<button className="pricing-btn">
+Get Started
+</button>
 
-     <h3>Growth</h3>
+</div>
 
-     <p className="price">$299/mo</p>
 
-     <ul>
-      <li>Everything in Starter</li>
-      <li>Advanced Payroll</li>
-      <li>Compliance Management</li>
-     </ul>
 
-     <button>Start Free Trial</button>
+<div className="pricing-card highlight">
 
-    </div>
+<h3>Growth</h3>
 
-    <div className="price-card">
+<div className="price">₹8,999<span>/mo</span></div>
 
-     <h3>Enterprise</h3>
+<ul>
+<li>Hire up to 25 employees</li>
+<li>Advanced payroll automation</li>
+<li>Compliance management</li>
+<li>Priority support</li>
+</ul>
 
-     <p className="price">Custom</p>
+<button className="pricing-btn">
+Start Free Trial
+</button>
 
-     <ul>
-      <li>Dedicated Team</li>
-      <li>Accounting Services</li>
-      <li>24/7 Support</li>
-     </ul>
+</div>
 
-     <button>Contact Sales</button>
 
-    </div>
 
-   </div>
+<div className="pricing-card">
 
-  </section>
+<h3>Enterprise</h3>
 
- );
+<div className="price">Custom</div>
+
+<ul>
+<li>Unlimited employees</li>
+<li>Dedicated support team</li>
+<li>Full compliance management</li>
+<li>Custom integrations</li>
+</ul>
+
+<button className="pricing-btn">
+Contact Sales
+</button>
+
+</div>
+
+
+</div>
+
+</section>
+
+);
 
 }
 
-export default PricingCards;
+export default Pricing;

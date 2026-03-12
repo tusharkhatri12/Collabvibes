@@ -1,74 +1,133 @@
-import React from "react";
-import { FaGlobe, FaMoneyBillWave, FaChartLine, FaBalanceScale } from "react-icons/fa";
 import "./Services.css";
 
-function Services() {
+function Services(){
 
-  return (
-    <section className="services">
+return(
 
-      <h2 className="section-title">
-        Everything You Need to Build a Global Team
-      </h2>
+<section className="services">
 
-      <p className="section-subtitle">
-        From hiring to payroll and compliance — manage your global workforce
-        from a single platform.
-      </p>
+<div className="services-header">
 
-      <div className="service-grid">
+<h2>
+Powerful <span className="gradient-word">Services</span> for Modern Teams
+</h2>
 
-        <div className="service-card">
-          <FaGlobe className="service-icon"/>
+<p>
+Everything you need to hire, manage and scale teams across India with automation and intelligent workflows.
+</p>
 
-          <h3>Hire Global Talent</h3>
+</div>
 
-          <p>
-            Access a curated network of developers, designers and operators
-            across 50+ countries in days instead of months.
-          </p>
-        </div>
+{/* SERVICE 1 */}
 
+<div className="service-row">
 
-        <div className="service-card">
-          <FaMoneyBillWave className="service-icon"/>
+<div className="service-text">
 
-          <h3>Automated Global Payroll</h3>
+<span className="service-tag">SERVICE 01</span>
 
-          <p>
-            Pay international teams seamlessly with automated payroll,
-            tax calculations and multi-currency support.
-          </p>
-        </div>
+<h3>Hire Across India</h3>
 
+<p>
+Access a curated pool of verified professionals across major Indian cities. 
+Our platform helps companies hire developers, designers and operations talent 
+faster while ensuring background verification and skill validation.
+</p>
 
-        <div className="service-card">
-          <FaChartLine className="service-icon"/>
+<ul>
+<li>✔ Verified talent network</li>
+<li>✔ Faster hiring pipeline</li>
+<li>✔ Talent from 25+ cities</li>
+</ul>
 
-          <h3>Hiring Analytics</h3>
+</div>
 
-          <p>
-            Track hiring pipelines, candidate progress and team growth
-            with real-time analytics dashboards.
-          </p>
-        </div>
+<div className="service-card">
 
+<div className="service-icon">👥</div>
 
-        <div className="service-card">
-          <FaBalanceScale className="service-icon"/>
+<h4>Talent Hiring</h4>
 
-          <h3>Compliance Management</h3>
+<p>Smart recruitment dashboard</p>
 
-          <p>
-            Stay compliant with employment laws, contracts and tax
-            regulations across multiple countries.
-          </p>
-        </div>
+</div>
 
-      </div>
+</div>
 
-    </section>
-  );
+{/* SERVICE 2 */}
+
+<div className="service-row reverse">
+
+<div className="service-text">
+
+<span className="service-tag">SERVICE 02</span>
+
+<h3>Automated Payroll</h3>
+
+<p>
+Simplify payroll operations with automated salary processing, tax deductions 
+and compliance reporting tailored for Indian businesses.
+</p>
+
+<ul>
+<li>✔ Salary automation</li>
+<li>✔ TDS & compliance</li>
+<li>✔ Payslip generation</li>
+</ul>
+
+</div>
+
+<div className="service-card">
+
+<div className="service-icon">💰</div>
+
+<h4>Payroll Engine</h4>
+
+<p>Automated salary system</p>
+
+</div>
+
+</div>
+
+{/* SERVICE 3 */}
+
+<div className="service-row">
+
+<div className="service-text">
+
+<span className="service-tag">SERVICE 03</span>
+
+<h3>Operations Dashboard</h3>
+
+<p>
+Track employee performance, hiring metrics and productivity insights in 
+a centralized operations dashboard designed for growing teams.
+</p>
+
+<ul>
+<li>✔ Employee analytics</li>
+<li>✔ Hiring metrics</li>
+<li>✔ Productivity insights</li>
+</ul>
+
+</div>
+
+<div className="service-card">
+
+<div className="service-icon">📊</div>
+
+<h4>Team Analytics</h4>
+
+<p>Operations insights dashboard</p>
+
+</div>
+
+</div>
+
+</section>
+
+);
+
 }
 
 export default Services;

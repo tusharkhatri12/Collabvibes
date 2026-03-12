@@ -1,0 +1,81 @@
+/* GLOBAL DARK THEME */
+
+body{
+    background: radial-gradient(circle at top,#0f172a,#020617);
+    color:white;
+    font-family: Inter, sans-serif;
+    overflow-x:hidden;
+    }
+    
+    /* animated particles */
+    
+    body::before{
+    content:"";
+    position:fixed;
+    top:0;
+    left:0;
+    width:200%;
+    height:200%;
+    background-image:radial-gradient(#ffffff22 1px, transparent 1px);
+    background-size:40px 40px;
+    animation:particleMove 80s linear infinite;
+    opacity:0.5;
+    pointer-events:none;
+    }
+    
+    @keyframes particleMove{
+    0%{transform:translateY(0)}
+    100%{transform:translateY(-1000px)}
+    }
+    
+    /* section layout */
+    
+    .section{
+    max-width:1200px;
+    margin:auto;
+    padding:120px 20px;
+    position:relative;
+    z-index:2;
+    }
+    
+    /* glass cards */
+    
+    .glass-card{
+    background:rgba(255,255,255,0.04);
+    border:1px solid rgba(255,255,255,0.08);
+    backdrop-filter:blur(14px);
+    border-radius:18px;
+    padding:35px;
+    transition:.35s;
+    }
+    
+    .glass-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 20px 60px rgba(0,0,0,0.6);
+    border-color:#6366f1;
+    }
+    
+    /* gradient text */
+    
+    .gradient-text{
+    background:linear-gradient(90deg,#22d3ee,#3b82f6,#a855f7);
+    background-size:300% 300%;
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+    animation:gradientShift 6s ease infinite;
+    }
+    
+    @keyframes gradientShift{
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+    }
+    
+    /* grid */
+    
+    .grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:30px;
+    margin-top:60px;
+    }

@@ -1,48 +1,96 @@
-import React from "react";
 import "./Testimonials.css";
 
 function Testimonials(){
 
- return(
+return(
 
-  <section className="testimonials">
+<section className="howitworks">
 
-   <h2>What Our Clients Say</h2>
+<div className="how-header">
 
-   <div className="testimonial-grid">
+<h2>
+How Our Platform <span className="gradient-word">Works</span>
+</h2>
 
-    <div className="testimonial-card">
-     <p>
-      IcebergOS helped us hire developers in less than 2 weeks.
-     </p>
+<p>
+Build and manage operational teams across India using a simple
+four step process designed for modern startups and growing companies.
+</p>
 
-     <h4>— Sarah Johnson</h4>
-     <span>CTO, TechFlow</span>
-    </div>
+</div>
 
-    <div className="testimonial-card">
-     <p>
-      Managing international payroll became incredibly easy.
-     </p>
 
-     <h4>— Michael Lee</h4>
-     <span>Founder, GrowthLab</span>
-    </div>
+<div className="how-grid">
 
-    <div className="testimonial-card">
-     <p>
-      The best outsourcing partner we've worked with.
-     </p>
 
-     <h4>— David Carter</h4>
-     <span>CEO, CloudScale</span>
-    </div>
+<div className="how-card">
 
-   </div>
+<span className="step">01</span>
 
-  </section>
+<h3>Post Your Requirement</h3>
 
- );
+<p>
+Define the roles you need across operations, technology or
+administration. Our platform helps you quickly outline the
+skills, location and team structure required for your business.
+</p>
+
+</div>
+
+
+
+<div className="how-card">
+
+<span className="step">02</span>
+
+<h3>Hire Verified Talent</h3>
+
+<p>
+Access a curated network of professionals across India.
+We simplify the recruitment process so companies can
+hire reliable team members without long hiring cycles.
+</p>
+
+</div>
+
+
+
+<div className="how-card">
+
+<span className="step">03</span>
+
+<h3>Automate Payroll</h3>
+
+<p>
+Manage salaries, deductions and payroll documentation
+with built-in automation. Our system ensures accuracy
+while maintaining compliance with Indian regulations.
+</p>
+
+</div>
+
+
+
+<div className="how-card">
+
+<span className="step">04</span>
+
+<h3>Scale Operations</h3>
+
+<p>
+Track team performance, manage growth and expand
+operations across cities while maintaining full
+visibility through a centralized dashboard.
+</p>
+
+</div>
+
+
+</div>
+
+</section>
+
+);
 
 }
 

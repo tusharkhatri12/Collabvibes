@@ -1,30 +1,105 @@
-import React from "react";
-import Navbar from "../components/Navbar";
+import { useState } from "react";
+import "./Signup.css";
 
-function Signup(){
+function Signup() {
 
- return(
+const [name,setName] = useState("");
+const [email,setEmail] = useState("");
+const [password,setPassword] = useState("");
+const [confirmPassword,setConfirmPassword] = useState("");
 
-  <>
-   <Navbar variant="light"/>
+const [error,setError] = useState("");
 
-   <div className="auth-page">
+const handleSubmit = (e) => {
+e.preventDefault();
 
-    <h1>Create Account</h1>
+if(!name || !email || !password || !confirmPassword){
+setError("All fields are required");
+return;
+}
 
-    <input placeholder="Name"/>
+const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-    <input placeholder="Email"/>
+if(!emailRegex.test(email)){
+setError("Please enter a valid email");
+return;
+}
 
-    <input type="password" placeholder="Password"/>
+if(password.length < 6){
+setError("Password must be at least 6 characters");
+return;
+}
 
-    <button>Create Account</button>
+if(password !== confirmPassword){
+setError("Passwords do not match");
+return;
+}
 
-   </div>
+setError("");
+alert("Signup successful (backend not connected)");
+};
 
-  </>
+return(
 
- );
+<section className="auth">
+
+<div className="auth-card">
+
+<h2>
+Create <span className="gradient-word">Account</span>
+</h2>
+
+<p className="auth-sub">
+Start building your team with our platform.
+</p>
+
+<form className="auth-form" onSubmit={handleSubmit}>
+
+<input
+type="text"
+placeholder="Full Name"
+value={name}
+onChange={(e)=>setName(e.target.value)}
+/>
+
+<input
+type="email"
+placeholder="Email address"
+value={email}
+onChange={(e)=>setEmail(e.target.value)}
+/>
+
+<input
+type="password"
+placeholder="Password"
+value={password}
+onChange={(e)=>setPassword(e.target.value)}
+/>
+
+<input
+type="password"
+placeholder="Confirm Password"
+value={confirmPassword}
+onChange={(e)=>setConfirmPassword(e.target.value)}
+/>
+
+{error && <div className="auth-error">{error}</div>}
+
+<button className="auth-btn">
+Create Account
+</button>
+
+</form>
+
+<p className="auth-switch">
+Already have an account? <a href="/login">Sign in</a>
+</p>
+
+</div>
+
+</section>
+
+);
 
 }
 
